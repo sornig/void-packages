@@ -1,11 +1,11 @@
-# Template file for 'base-files'
-pkgname=base-files
-version=0.144
+# Template file for 'base-files-ksh'
+pkgname=base-files-ksh
+version=0.1
 revision=1
 bootstrap=yes
 depends="xbps-triggers"
-short_desc="Void Linux base system files"
-maintainer="Enno Boland <orphan@voidlinux.org>"
+short_desc="Void Linux base system files (ksh flavour)"
+maintainer="Sebastian E. Ornig <seb@sornig.eu>"
 license="Public Domain"
 homepage="https://www.voidlinux.org"
 conf_files="
