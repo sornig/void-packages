@@ -59,7 +59,7 @@ do_install() {
 	done
 
 	vinstall ${FILESDIR}/securetty 600 etc
-	for f in profile hosts host.conf issue subuid subgid \
+	for f in doas.conf profile hosts host.conf issue subuid subgid \
 		inputrc fstab passwd group crypttab nsswitch.conf; do
 		vinstall ${FILESDIR}/${f} 644 etc
 	done
