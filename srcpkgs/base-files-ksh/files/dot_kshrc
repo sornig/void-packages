@@ -1,7 +1,11 @@
-# .bashrc
+# .kshrc
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+#set -o vi
+#set -o ignoreeof
+
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1='[${USER}@$(hostname) ${PWD}]$ '
+export PS1

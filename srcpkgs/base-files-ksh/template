@@ -14,9 +14,8 @@ conf_files="
 	/etc/hosts
 	/etc/host.conf
 	/etc/securetty
-	/etc/skel/.bash_profile
-	/etc/skel/.bash_logout
-	/etc/skel/.bashrc
+	/etc/skel/.profile
+	/etc/skel/.kshrc
 	/etc/skel/.inputrc
 	/etc/subuid
 	/etc/subgid
@@ -55,7 +54,7 @@ do_install() {
 	fi
 
 	# Install misc config files.
-	for f in bash_logout bash_profile bashrc inputrc; do
+	for f in profile kshrc inputrc; do
 		vinstall ${FILESDIR}/dot_${f} 644 etc/skel .${f}
 	done
 
